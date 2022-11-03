@@ -1,5 +1,6 @@
 #!/bin/bash -e
-cd /home/user
+mkdir /etc/zcash
+cd /etc/zcash
 #rm -r zcash
 git clone https://github.com/zcash/zcash.git
 cd zcash
