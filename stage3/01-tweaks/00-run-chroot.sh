@@ -7,6 +7,6 @@ cd zcash
 git checkout v5.3.0
 ./zcutil/fetch-params.sh
 ./zcutil/clean.sh
-./zcutil/build.sh V=1 -j$(nproc)
+./zcutil/build.sh V=1
 echo "alias zcashd='./etc/zcash/zcash/src/zcashd'" >> /root/.bashrc
 . ~/.bashrc
