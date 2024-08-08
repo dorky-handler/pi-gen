@@ -2,11 +2,8 @@ on_chroot << EOF
 echo "Changing to pi home dir"
 cd /home/pi
 echo "Cloning zcash-nodejs"
-rm -rf zcash-nodejs
-if [ ! -d "$DIRECTORY" ]; then
-  echo "$DIRECTORY does not exist."
-fi
 git clone https://github.com/dorky-handler/zcash-nodejs
+chmod ugo+rwx zcash-nodejs
 cd zcash-nodejs
 sudo chown -R pi /home/pi/zcash-nodejs
 echo "installing npm packages"
