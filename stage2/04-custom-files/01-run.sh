@@ -11,6 +11,7 @@ npm install
 echo "downloading zcashd"
 curl -o zcashd https://update.zcash.nodecipher.com/zcashd-5.9.1
 chmod +x zcashd
+chown pi db
 echo "Setting up zcashnode.service"
 install -m 644 zcashnode.service /etc/systemd/system
 systemctl enable zcashnode
